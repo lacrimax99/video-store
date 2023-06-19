@@ -17,6 +17,9 @@ func GetAllRental() map[string]model.Rental {
 	rent3 := newRental("3", "3", "5", time.Now().AddDate(0, 0, -1), time.Now(), 300)
 	rent4 := newRental("4", "4", "6", time.Now().AddDate(0, 0, -3), t, 400)
 	rent5 := newRental("5", "5", "9", time.Now().AddDate(0, 0, -1), t, 500)
+	rent6 := newRental("6", "1", "15", time.Now().AddDate(0, 0, -4), t, 500)
+	rent7 := newRental("7", "3", "18", time.Now().AddDate(0, 0, -1), time.Now(), 300)
+	rent8 := newRental("3", "4", "10", time.Now().AddDate(0, 0, -1), time.Now(), 300)
 
 	return map[string]model.Rental{
 		rent1.Id: rent1,
@@ -24,6 +27,9 @@ func GetAllRental() map[string]model.Rental {
 		rent3.Id: rent3,
 		rent4.Id: rent4,
 		rent5.Id: rent5,
+		rent6.Id: rent6,
+		rent7.Id: rent7,
+		rent8.Id: rent8,
 	}
 }
 
